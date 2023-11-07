@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+  setlocale(LC_ALL, "portuquese");
+
+//Exercício 2: 
+//Você é um desenvolvedor de e-commerce e está trabalhando em um novo sistema de descontos.
+//O sistema oferece um desconto de 10% para compras acima de R$ 100,00 se a compra for feita em um dia de semana.
+//Se a compra for feita em um fim de semana, o desconto será de 15% sobre o valor da compra acima de R$ 100,00.
+
+float compra;
+float desconto;  
+float precofinal;
+int dia;
+
+printf("Lojinha do vekrom\n");
+printf("Oferecemos desconto de 10 porcento acima de 100,00\n");
+printf("Compras acima de 100,00 no final de semnana recebem 15 porcento de desconto\n");
+printf("Qual dia da semana?\n");
+scanf("%d", &dia);
+printf("digite preço da compra");
+scanf("%f", &compra);
+fflush(stdin);
+ 
+ if (compra > 100)
+    {
+
+        switch (dia)
+        {
+        case 1:
+            desconto = compra * 0.1;
+            precofinal = compra - desconto;
+            break;
+        case 2:
+            desconto = compra * 0.1;
+            precofinal = compra - desconto;
+            break;
+        case 3:
+            desconto = compra * 0.1;
+            precofinal = compra - desconto;
+            break;
+        case 4:
+            desconto = compra * 0.1;
+            precofinal = compra - desconto;
+            break;
+        case 5:
+            desconto = compra * 0.1;
+            precofinal = compra - desconto;
+            break;
+        case 6:
+            desconto = compra * 0.15;
+            precofinal = compra - desconto;
+            break;
+        case 7:
+            desconto = compra * 0.15;
+            precofinal = compra - desconto;
+            break;
+
+        default:
+            break;
+        }
+    }
+    else
+    {
+        precofinal = compra;
+    }
+    printf("\nPreÃ§o final R$:%.2f", precofinal);
+
+
+ return 0;
+
+
+
+}

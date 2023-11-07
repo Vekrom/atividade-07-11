@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+  setlocale(LC_ALL, "portuquese");
+//Exercício 1: 
+//Você é um desenvolvedor de jogos e está trabalhando em um novo jogo de aventura.
+//O jogo tem um sistema de clima que depende da temperatura externa. Se a temperatura for superior a 25 graus Celsius, o clima será ensolarado.
+//Se a temperatura for inferior a 15 graus Celsius, o clima será chuvoso. Se a temperatura estiver entre 15 e 25 graus Celsius, o clima será nublado.
+
+  int temperatura;
+
+  printf("Qual temperatura:");
+  scanf("%d", &temperatura);
+
+  if (temperatura >= 25){
+    printf("clima ensolarado!\n");
+  }else if (temperatura <= 15)
+  {
+   printf("clima chuvoso!\n");
+  }else{
+   printf("clima nublado!\n"); 
+
+  }
+  
+
+ return 0;
+
+}

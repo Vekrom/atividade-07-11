@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+ 
+ int numero;
+ printf("Digite um número: ");
+ scanf("%d",&numero);
+
+ do
+ {
+    printf("Contagem regresiva: %d\n", numero);
+    numero -= 1;
+ } while (numero > -1);
+ 
+
+    return 0;
+}
